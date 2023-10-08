@@ -1,0 +1,65 @@
+{"intents":
+  [
+        {"tag": "greeting",
+          "patterns": ["Hi", "Hello", "Good day", "Hey there"],
+          "responses": ["Hello! Welcome to the Chatbot I Provide NLP Notes. How can I assist you today?",
+                        "Hi there! How can I help you?",
+                        "Good day! What questions do you have for me?"],
+          "context_set": ""
+        },
+        {"tag": "greetingMore",
+         "patterns": [ "How are you", "Whats up"],
+         "responses": ["I am fine!, How about you?", "I am good, you?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": [ "Bye", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Talk to you later", "Goodbye!","See you again"],
+         "context_set": ""
+        },
+        {
+          "tag":"unlogic",
+          "patterns":["information","definition","what","libraries","approaches","applications","advantages","so","that","this","there","are","or","me","explain","chat","bro","dude","friend"],
+          "responses":["give about detail!","give some meaningful!"],
+          "context_set":""
+        },
+        {"tag": "info",
+          "patterns": ["What information you can provide?","robo"],
+          "responses": ["I provide the basics and advanced concepts of natural language processing (NLP) with our complete NLP tutorial and get ready to explore the vast and exciting field of NLP, where technology meets human language."],
+          "context_set": ""
+        },
+        {"tag": "NLP",
+         "patterns": ["What is NLP","Explain NLP","Define NLP","definition of NLP","NLP"],
+         "responses": ["NLP stands for Natural Language Processing. It is the branch of Artificial Intelligence that gives the ability to machine understand and process human languages. Human languages can be in the form of text or audio format."],
+         "context_set": ""
+        },
+        {"tag": "History",
+         "patterns": ["History about NLP","NLP History","History"],
+         "responses": ["Natural Language Processing started in 1950 When Alan Mathison Turing published an article in the name Computing Machinery and Intelligence. It is based on Artificial intelligence. It talks about automatic interpretation and generation of natural language. As the technology evolved etc"],
+         "context_set": ""
+        },
+        {"tag": "approaches",
+         "patterns": ["what are the approaches of nlp","NLP approaches"],
+         "responses": ["Heuristics-Based NLP: \n This is the initial approach of NLP. It is based on defined rules. Which comes from domain knowledge and expertise. Example: regex Statistical \n Machine learning-based NLP: \n It is based on statistical rules and machine learning algorithms. In this approach, algorithms are applied to the data and learned from the data, and applied to various tasks. Examples: Naive Bayes, support vector machine (SVM), hidden Markov model (HMM), etc.Neural Network-based NLP: \n This is the latest approach that comes with the evaluation of neural network-based learning, known as Deep learning. It provides good accuracy, but it is a very data-hungry and time-consuming approach. It requires high computational power to train the model. Furthermore, it is based on neural network architecture. Examples: Recurrent neural networks (RNNs), Long short-term memory networks (LSTMs), Convolutional neural networks (CNNs), Transformers, etc."],
+         "context_set": ""
+        },
+        {"tag": "advantages",
+        "patterns": ["what are the advantages in nlp","NLP advantages"],
+        "responses": ["Advantages of NLP: \n NLP helps us to analyse data from both structured and unstructured sources \n.NLP is very fast and time efficient \n. NLP offers end-to-end exact answers to the question.\n So, It saves time that going to consume unnecessary and unwanted information. \n NLP offers users to ask questions about any subject and give a direct response within milliseconds."],
+        "context_set": ""
+       },
+       {"tag": "applications",
+        "patterns": ["what are the applications of nlp","NLP applications","types of applications in nlp"],
+        "responses": ["Text and speech processing like-Voice assistants - Alexa, Siri, etc. \n Text classification like Grammarly, Microsoft Word, and Google Docs \n Information extraction like-Search engines like DuckDuckGo, Google \n Chatbot and Question Answering like:- website bots \n Language Translation like:- Google Translate \n Text summarization "],
+        "context_set": ""
+       },
+       {"tag": "libraries",
+        "patterns": ["what are the libraries in nlp","NLP libraries","types of libraries in nlp"],
+        "responses": ["NLTK \n Spacy \n Gensim \n fastText \n Stanford toolkit (Glove) \n Apache OpenNLP"],
+        "context_set": ""
+       }
+       
+
+        
+]
+}
