@@ -108,8 +108,7 @@ table{
     border-radius: 0%;
   }
   input[type='text']{
-    width: 350px;
-    margin-left: 10%;
+    width: 300px;
 
   }
 }
