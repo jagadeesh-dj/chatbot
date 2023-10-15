@@ -91,7 +91,7 @@ table{
   }
   #messages{
     width: 100%;
-    height: calc(70vh - 50px);
+    height: calc(100vh - 50px);
     height: 80%;
   }
  
@@ -109,6 +109,7 @@ table{
   }
   input[type='text']{
     width: 300px;
+    margin-left: 0%;
 
   }
 }
