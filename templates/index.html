@@ -7,159 +7,45 @@
   <title>Chatbot</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{% static 'style.css' %}">
-  <!-- <style>
-    /* *{
-      margin: 0%;
-      padding: 0%;
-      box-sizing: border-box;
-    }
-    #container{
-      /* padding: 1rem 1rem; */
-      position: absolute;
-      background-color: rgb(232, 228, 236);
-      transform: translate(-50%,-50%);
-      top: 50%;
-      left: 50%;
-      width: 800px;
-      height: 590px;
-      border-radius: 10px;
-    }
-    #messages{
-      overflow-y: scroll;
-      scroll-behavior: smooth;
-      height: calc(80vh - 60px);
-      min-height: 70%;
-      width: 100%;
-      padding:5px 10px ;
-    }
-    #messages::-webkit-scrollbar {
-      display: none;
-    }
-    /* #messages::-webkit-scrollbar-track {
-      background: rgb(249, 249, 249);
-    }
-    #messages::-webkit-scrollbar-thumb {
-      background-color: aliceblue;
-    } */
-    input[type='text']{
-      height: 40px;
-      border-radius: 30px;
-      padding-left:10px ;
-      outline: none;
-      border: none;
-      width: 500px;
-      font-weight: bold;
-    }
-    #chatbot-heading{
-      text-align: center;
-      color: white;
-      height: 50px;
-      padding: 5px 5px;
-      margin: 0.5rem 0.5rem;
-      background-color: rgb(117, 150, 196);
-      border-radius: 5px;
-    }
-    #chatbot-heading h2{
-      padding: 0.5rem 0.5rem;
-    }
-    #form{
-      position: fixed;
-      bottom: 0%;
-      width: 98%;
-      height: 50px;
-      padding: 5px 5px;
-      margin: 0.5rem 0.5rem;
-      border-radius: 5px;
-      background-color: rgb(195, 191, 191);
-    }
-    
-    #chatbot{
-      width: 100%;
-    }
-    button{
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-      background: none;
-      font-size: larger;
-    }
-    table{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: large;
-        font-weight: 900;
-      }
-    @media screen and (max-width: 600px){
-      #container{
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        transform: none;
-        top: 0%;
-        left: 0%;
-        background-color: rgb(232, 228, 236);
-      }
-      #messages{
-        width: 100%;
-        height: calc(90vh - 50px);
-        height: 80%;
-      }
-      
-     
-      #form{
-        width: 100%;
-        margin: 0%;
-        border-radius: 0%;
-      }
-      #chatbot-heading{
-        position: sticky;
-        top: 0%;
-        width: 100%;
-        margin: 0%;
-        border-radius: 0%;
-      }
-      input[type='text']{
-        width: 360px;
 
-      }
-    } */
-  </style> -->
 </head>
 <body>
   <div id="container">
-    <div id="chatbot-heading">
-      <h2>Tutorial ChatBot</h2>
-    </div>
-    <div id="messages">  
-      <table id="chatbot">
-        <tr id="user" >
-          <td >
-
-          </td>
-        </tr>
-        <tr id="bot">
-          <td>
-
-          </td>
-        </tr>
-      </table>
-    </div>  
-    <div id="form">
-      <form action="" method="POST" autocomplete="off">
-        {% csrf_token %}
-        <div style="display: flex;text-align: center;">
-          <div>
-            <input type="text" name="message" id="msg" placeholder="enter message">
-  
-          </div>
-          <div>
-            <button id="btn"><i class="fa-solid fa-paper-plane"></i></button>
-  
-          </div>
-       
+        <div id="chatbot-heading">
+          <h2>Tutorial ChatBot</h2>
         </div>
+        <div id="messages">  
+          <table id="chatbot">
+            <tr id="user" >
+              <td >
+    
+              </td>
+            </tr>
+            <tr id="bot">
+              <td>
+    
+              </td>
+            </tr>
+          </table>
+        </div>  
+        <div id="form">
+          <form action="" method="POST" autocomplete="off">
+            {% csrf_token %}
+            <div style="display: flex;text-align: center;">
+              <div>
+                <input type="text" name="message" id="msg" placeholder="enter message">
+      
+              </div>
+              <div>
+                <button id="btn"><i class="fa-solid fa-paper-plane"></i></button>
+      
+              </div>
           
-      </form>
-    </div>
+            </div>
+              
+          </form>
+        </div>
+    
   </div>
 
   <script>

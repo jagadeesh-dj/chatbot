@@ -91,10 +91,9 @@ table{
   }
   #messages{
     width: 100%;
-    height: calc(90vh - 50px);
+    height: calc(70vh - 50px);
     height: 80%;
   }
-  
  
   #form{
     width: 100%;
@@ -109,7 +108,8 @@ table{
     border-radius: 0%;
   }
   input[type='text']{
-    width: 360px;
+    width: 350px;
+    margin-left: 10%;
 
   }
 }
