@@ -14,6 +14,8 @@ intents = json.loads(open('data.json').read())#dataset
 words = pickle.load(open('texts.pkl', 'rb'))#patterns
 classes = pickle.load(open('labels.pkl', 'rb'))#tags
 
+nltk.download('punkt')
+nltk.download('wordnet')
 
 lemmatizer = WordNetLemmatizer()
 
