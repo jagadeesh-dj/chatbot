@@ -8,14 +8,16 @@ from keras.models import load_model
 import json
 import random
 import tensorflow as tf
+import speech_recognition as sr
+
 
 model = load_model('model.h5')#deeplearning model
 intents = json.loads(open('data.json').read())#dataset
 words = pickle.load(open('texts.pkl', 'rb'))#patterns
 classes = pickle.load(open('labels.pkl', 'rb'))#tags
 
-nltk.download('punkt')
-nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 lemmatizer = WordNetLemmatizer()
 
@@ -77,6 +79,27 @@ def bot(request):
     return render(request,'index.html')
 
 
+def speech(request):
+
+    # Initialize the recognizer
+    recognizer = sr.Recognizer()
+
+    # Record audio from a microphone
+    with sr.Microphone() as source:
+        print("Say something...")
+        audio = recognizer.listen(source)
+
+    # Use a speech-to-text API to convert the audio to text
+    try:
+        text = recognizer.recognize_google(audio)  # You can also use other APIs like recognize_bing or recognize_wit
+        print("You said: " + text)
+        if text!=None:
+            response=chatbot_response(text)
+            return JsonResponse({"res":response,"text":text})
+    except sr.UnknownValueError:
+        print("Sorry, I couldn't understand what you said.")
+    except sr.RequestError as e:
+        print("Error making the request; {0}".format(e))
 
 
 

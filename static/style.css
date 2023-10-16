@@ -18,7 +18,7 @@
   scroll-behavior: smooth;
 
   height: 510px;
-  padding: 30px 20px 80px;
+  padding: 10px 20px 80px;
 }
 #messages::-webkit-scrollbar {
   display: none;
@@ -76,6 +76,19 @@ button{
 table{
     font-size: large;
   }
+#btn{
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+  width: 40px;
+
+}
+#btn2{
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+  width: 40px;
+}
 @media screen and (max-width: 500px){
   #container{
     width: 100%;
