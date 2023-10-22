@@ -50,12 +50,12 @@
        },
        {"tag": "applications",
         "patterns": ["what are the applications of nlp","NLP applications","types of applications in nlp"],
-        "responses": ["Text and speech processing like-Voice assistants - Alexa, Siri, etc. \n Text classification like Grammarly, Microsoft Word, and Google Docs \n Information extraction like-Search engines like DuckDuckGo, Google \n Chatbot and Question Answering like:- website bots \n Language Translation like:- Google Translate \n Text summarization "],
+        "responses": ["Text and speech processing like-Voice assistants - Alexa, Siri, etc.  Text classification like Grammarly, Microsoft Word, and Google Docs \n Information extraction like-Search engines like DuckDuckGo, Google \n Chatbot and Question Answering like:- website bots \n Language Translation like:- Google Translate \n Text summarization "],
         "context_set": ""
        },
        {"tag": "libraries",
         "patterns": ["what are the libraries in nlp","NLP libraries","types of libraries in nlp"],
-        "responses": ["NLTK \n Spacy \n Gensim \n fastText \n Stanford toolkit (Glove) \n Apache OpenNLP"],
+        "responses": ["NLTK  Spacy , Gensim , fastText , Stanford toolkit (Glove), Apache OpenNLP"],
         "context_set": ""
        }
        
