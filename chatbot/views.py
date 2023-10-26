@@ -13,8 +13,8 @@ import speech_recognition as sr
 
 model = load_model('model.h5')#deeplearning model
 intents = json.loads(open('data.json').read())#dataset
-words = pickle.load(open('texts.pkl', 'rb'))#patterns
-classes = pickle.load(open('labels.pkl', 'rb'))#tags
+words = pickle.load(open('patterns.pkl', 'rb'))#patterns
+classes = pickle.load(open('tags.pkl', 'rb'))#tags
 
 # nltk.download('punkt')
 # nltk.download('wordnet')

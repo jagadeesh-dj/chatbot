@@ -44,22 +44,101 @@
          "context_set": ""
         },
         {"tag": "advantages",
-        "patterns": ["what are the advantages in nlp","NLP advantages"],
+        "patterns": ["what are the disadvantages in nlp","NLP disadvantages"],
         "responses": ["Advantages of NLP: \n NLP helps us to analyse data from both structured and unstructured sources \n.NLP is very fast and time efficient \n. NLP offers end-to-end exact answers to the question.\n So, It saves time that going to consume unnecessary and unwanted information. \n NLP offers users to ask questions about any subject and give a direct response within milliseconds."],
+        "context_set": ""
+       },
+       {"tag": "disadvantages",
+        "patterns": ["what are the advantages in nlp","NLP advantages"],
+        "responses": ["For the training of the NLP model, A lot of data and computation are required. \n Many issues arise for NLP when dealing with informal expressions, \n idioms, and cultural jargon. \n NLP results are sometimes not to be accurate, \n  and accuracy is directly proportional to the accuracy of data. \n NLP is designed for a single, \n narrow job since it cannot adapt to new domains and has a limited function."],
         "context_set": ""
        },
        {"tag": "applications",
         "patterns": ["what are the applications of nlp","NLP applications","types of applications in nlp"],
-        "responses": ["Text and speech processing like-Voice assistants - Alexa, Siri, etc.  Text classification like Grammarly, Microsoft Word, and Google Docs \n Information extraction like-Search engines like DuckDuckGo, Google \n Chatbot and Question Answering like:- website bots \n Language Translation like:- Google Translate \n Text summarization "],
+        "responses": ["Text and speech processing like-Voice assistants - Alexa, Siri, etc. \n Text classification like Grammarly, Microsoft Word, and Google Docs \n Information extraction like-Search engines like DuckDuckGo, Google \n Chatbot and Question Answering like:- website bots \n Language Translation like:- Google Translate \n Text summarization "],
         "context_set": ""
        },
        {"tag": "libraries",
         "patterns": ["what are the libraries in nlp","NLP libraries","types of libraries in nlp"],
-        "responses": ["NLTK  Spacy , Gensim , fastText , Stanford toolkit (Glove), Apache OpenNLP"],
+        "responses": ["NLTK \n Spacy ,\n Gensim ,\n fastText, \n Stanford toolkit (Glove), \n Apache OpenNLP"],
         "context_set": ""
-       }
-       
+      },
+      {"tag": "tokenization ",
+      "patterns": ["what is tokenization","what are the tokenization","types of tokenization"],
+      "responses": ["Tokenization refers to break down the text into smaller units. \n It entails splitting paragraphs into sentences and sentences into words. \n It is one of the initial steps of any NLP pipeline."],
+      "context_set":""
+      },
+    {"tag": " Lemmatization",
+    "patterns":["what are the lemmatization", " what is Lemmatization", "types of Lemmatization"],
+    "responses": ["Lemmatization  grouping together the inflected forms of the same word. \n This way, we can reach out to the base form of any word which will be meaningful in nature. "],
+       "context_set":""
+  },
+  {"tag": "Stemming",
+  "patterns":["what is Stemming", "what are the Stemming", "types of Stemming"],
+  "responses": ["Stemming generates the base word from the inflected word by removing the affixes of the word. \n It has a set of pre-defined rules that govern the dropping of these affixes. \n It must be noted that stemmers might not always result in semantically meaningful base words.  \n Stemmers are faster and computationally less expensive than lemmatizers. "],
+  "context_set":""
+},
+{"tag": "Part of Speech Tagging",
+"patterns":["what are the part of speech tagging", "what is part of speech tagging", "types of part of speech tagging"],
+"responses":["Part of Speech Tagging (POS)tagging refers to assigning each word of a sentence to its part of speech. \n It is significant as it helps give a better syntactic overview of a sentence. "],
+"context_set":""
+},
+{"tag": "Word Embeddings in NLP",
+"patterns":["what are the word embeddings in nlp", "what is word embeddings in nlp", "goal of word embeddings in nlp"],
+"responses":["It is an approach for representing words and documents. \n Word Embedding or Word Vector is a numeric vector input that represents a word in a lower-dimensional space. \n It allows words with similar meanings to have a similar representation. \n They can also approximate meaning. \n A word vector with 50 values can represent 50 unique features. \n Features: Anything that relates words to one another. \n E.g.: Age, Sports, Fitness, Employed, etc. Each word vector has values corresponding to these features."],
+"context_set":""
+},
+{"tag": "Introduction to Recurrent Neural Network",
+"patterns":["What is Recurrent Neural Network", "what are recurrent neural network"],
+"responses":["Recurrent Neural Network(RNN) is a type of Neural Network where the output from the previous step is fed as input to the current step. \n In traditional neural networks, all the inputs and outputs are independent of each other, but in cases when it is required to predict the next word of a sentence, the previous words are required and hence there is a need to remember the previous words. \n Thus RNN came into existence, which solved this issue with the help of a Hidden Layer. \n The main and most important feature of RNN is its Hidden state, which remembers some information about a sequence. \n The state is also referred to as Memory State since it remembers the previous input to the network. \n It uses the same parameters for each input as it performs the same task on all the inputs or hidden layers to produce the output. \n This reduces the complexity of parameters, unlike other neural networks."],
+"context_set":""
+},
+{"tag": "Normalization of Text in NLP",
+"patterns":["what are normalization of text in nlp", "what is normalization of text in nlp"],
+"responses":["Natural Language Processing (NLP) is probably the hottest topic in Artificial Intelligence (AI) right now. \n After the breakthrough of GPT-3 with its ability to write essays, code and also create images from text, Google announced its new trillion-parameter AI language model that’s almost 6 times bigger than GPT-3. \n These are massive advances in the discipline that keep pushing the boundaries to new limits."],
+"context_set":""
+},
+{"tag": "Bag of Word",
+"patterns":["what is bag of word","What are the bag of word"],
+"responses":["In this article, we are going to discuss a Natural Language Processing technique of text modeling known as Bag of Words model. \n Whenever we apply any algorithm in NLP, it works on numbers. \n We cannot directly feed our text into that algorithm. \n Hence, Bag of Words model is used to preprocess the text by converting it into a bag of words, which keeps a count of the total occurrences of most frequently used words."],
+"context_set":""
+},
+{"tag": "Cosine Similarity",
+"patterns":["what is cosine similarity", "what are the cosine similarity"],
+"responses":["Prerequisite – Measures of Distance in Data Mining In Data Mining, similarity measure refers to distance with dimensions representing features of the data object, in a dataset. \n If this distance is less, there will be a high degree of similarity, but when the distance is large, there will be a low degree of similarity. "],
+"context_set":""
+},
+{"tag": "Regular Expressions",
+"patterns":["what is regular expressions","what are the regular expressions"],
+"responses":["Regex is used in Google Analytics in URL matching in supporting search and replaces in most popular editors like Sublime, Notepad++, Brackets, Google Docs, and Microsoft Word."],
+"context_set":""
+},
+{"tag": "Glove Data",
+"patterns":["what is glove data", "what are the glove data"],
+"responses":["It stands for Global Vectors. \n This is created by Stanford University. \n Glove has pre-defined dense vectors for around every 6 billion words of English literature along with many other general use characters like comma, braces, and semicolons. "],
+"context_set":""
+},
+{"tag": "Skip Gram",
+"patterns":["what is skip gram", "what are the skip gram"],
+"responses":["In skip-gram architecture of word2vec, the input is the center word and the predictions are the context words. \n Consider an array of words W, if W(i) is the input (center word), then W(i-2), W(i-1), W(i+1), and W(i+2) are the context words if the sliding window size is 2. "],
+"context_set":""
+},
+{"tag": "Named Entity Recognition",
+"patterns":["what is named entity recognition", "what are the named entity recognition"],
+"responses":["Named Entity Recognition (NER) is a key task in Natural Language Processing (NLP) that involves the identification and classification of named entities in unstructured text, such as people, organizations, locations, dates, and other relevant information.\n NER is used in various NLP applications such as information extraction, sentiment analysis, question-answering, and recommendation systems."],
+"context_set":""
+},
+{"tag": "Long Short Term Memory Networks",
+"patterns":["what is long short term memory networks", "what are the long short term memory"],
+"responses":["To solve the problem of Vanishing and Exploding Gradients in a Deep Recurrent Neural Network, many variations were developed. \n One of the most famous of them is the Long Short Term Memory Network(LSTM). \n In concept, an LSTM recurrent unit tries to “remember” all the past knowledge that the network is seen so far and to “forget” irrelevant data. \n This is done by introducing different activation function layers called “gates” for different purposes. \n Each LSTM recurrent unit also maintains a vector called the Internal Cell State which conceptually describes the information that was chosen to be retained by the previous LSTM recurrent unit."],
+"context_set":""
+},
+{"tag":"Sentiment Analysis with an Recurrent Neural Networks",
+"patterns":["what is sentiment analysis with an recurrent neural networks", "what are the sentiment analyis with an recurrent neural networks"],
+"responses":["Recurrent Neural Networks (RNN) are to the rescue when the sequence of information is needed to be captured (another use case may include Time Series, next word prediction, etc.). \n Due to its internal memory factor, it remembers past sequences along with current input which makes it capable to capture context rather than just individual words."],
+"context_set":""
+}
 
-        
-]
+
+  ]
 }
