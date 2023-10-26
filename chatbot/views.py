@@ -12,12 +12,12 @@ import speech_recognition as sr
 
 
 model = load_model('model.h5')#deeplearning model
-intents = json.loads(open('data.json').read())#dataset
-words = pickle.load(open('patterns.pkl', 'rb'))#patterns
-classes = pickle.load(open('tags.pkl', 'rb'))#tags
+intents = json.loads(open('data.json', encoding="utf-8").read())#dataset
+words = pickle.load(open('patterns', 'rb'))#patterns
+classes = pickle.load(open('tags', 'rb'))#tags
 
-# nltk.download('punkt')
-# nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('wordnet')
 
 lemmatizer = WordNetLemmatizer()
 
