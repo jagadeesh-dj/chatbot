@@ -13,8 +13,8 @@ import speech_recognition as sr
 
 model = load_model('model.h5')#deeplearning model
 intents = json.loads(open('data.json', encoding="utf-8").read())#dataset
-words = pickle.load(open('patterns', 'rb'))#patterns
-classes = pickle.load(open('tags', 'rb'))#tags
+words = pickle.load(open('texts.pkl', 'rb'))#patterns
+classes = pickle.load(open('labels.pkl', 'rb'))#tags
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -93,6 +93,7 @@ def speech(request):
     try:
         text = recognizer.recognize_google(audio)  # You can also use other APIs like recognize_bing or recognize_wit
         print("You said: " + text)
+
         if text!=None:
             response=chatbot_response(text)
             return JsonResponse({"res":response,"text":text})

@@ -120,6 +120,9 @@ document.addEventListener("DOMContentLoaded",(e)=>{
 });
 
 function scroll(){
+
     const scro=document.getElementById('messages')
     scro.scrollTop=scro.scrollHeight
 }
+
+// const recognitio=new webKitSpeechRecognition() || new SpeechRecognition();

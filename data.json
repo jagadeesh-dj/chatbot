@@ -44,12 +44,12 @@
          "context_set": ""
         },
         {"tag": "advantages",
-        "patterns": ["what are the disadvantages in nlp","NLP disadvantages"],
+        "patterns": ["what are the advantages in nlp","NLP advantages"],
         "responses": ["Advantages of NLP: \n NLP helps us to analyse data from both structured and unstructured sources \n.NLP is very fast and time efficient \n. NLP offers end-to-end exact answers to the question.\n So, It saves time that going to consume unnecessary and unwanted information. \n NLP offers users to ask questions about any subject and give a direct response within milliseconds."],
         "context_set": ""
        },
        {"tag": "disadvantages",
-        "patterns": ["what are the advantages in nlp","NLP advantages"],
+        "patterns": ["what are the disadvantages in nlp","NLP disadvantages"],
         "responses": ["For the training of the NLP model, A lot of data and computation are required. \n Many issues arise for NLP when dealing with informal expressions, \n idioms, and cultural jargon. \n NLP results are sometimes not to be accurate, \n  and accuracy is directly proportional to the accuracy of data. \n NLP is designed for a single, \n narrow job since it cannot adapt to new domains and has a limited function."],
         "context_set": ""
        },
